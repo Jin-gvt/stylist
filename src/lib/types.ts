@@ -97,7 +97,7 @@ export interface EmailAction {
   label: string
   type: 'payment_link' | 'search_query' | 'mailto' | 'external_link' | 'like_action'
   url?: string
-  data?: Record<string, any>
+  data?: Record<string, unknown>
 }
 
 // Stylist dashboard metrics
@@ -123,7 +123,7 @@ export interface StylistMetrics {
 }
 
 // API Response types
-export interface ApiResponse<T = any> {
+export interface ApiResponse<T = unknown> {
   success: boolean
   data?: T
   error?: string
@@ -140,6 +140,6 @@ export type SocketEventType =
 
 export interface SocketEvent {
   type: SocketEventType
-  data: any
+  data: unknown
   timestamp: string
 }

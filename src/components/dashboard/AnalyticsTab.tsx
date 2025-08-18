@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { BarChart, TrendingUp, Clock, Mail, Users, DollarSign } from 'lucide-react'
+import { BarChart, TrendingUp, Clock, Mail, Users } from 'lucide-react'
 
 export function AnalyticsTab() {
   // Mock analytics data
@@ -27,7 +27,7 @@ export function AnalyticsTab() {
     }
   }
 
-  const MetricCard = ({
+    const MetricCard = ({
     icon: Icon,
     title,
     value,
@@ -35,7 +35,7 @@ export function AnalyticsTab() {
     trend,
     trendDirection
   }: {
-    icon: any
+    icon: React.ComponentType<{ className?: string }>
     title: string
     value: string | number
     subtitle: string
@@ -85,7 +85,7 @@ export function AnalyticsTab() {
 
       {/* Today's Metrics */}
       <div>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Today's Performance</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Today&apos;s Performance</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <MetricCard
             icon={Mail}

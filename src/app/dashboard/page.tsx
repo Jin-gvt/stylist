@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Clock, MessageSquare, PenTool, BarChart, Mail, Users, TrendingUp, DollarSign } from 'lucide-react'
+import { Clock, MessageSquare, PenTool, BarChart, Mail, Users, TrendingUp } from 'lucide-react'
 
 export default function DashboardPage() {
   // Mock user for demo
@@ -209,7 +209,7 @@ export default function DashboardPage() {
 
             {/* Today's Metrics */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Today's Performance</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">Today&apos;s Performance</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <Card>
                   <CardContent className="p-6">

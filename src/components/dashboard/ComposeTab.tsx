@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Textarea } from '@/components/ui/textarea'
+
 import { Badge } from '@/components/ui/badge'
 import { PenTool, Eye, Send, Save } from 'lucide-react'
 import { useState } from 'react'
@@ -12,7 +12,7 @@ import { useState } from 'react'
 export function ComposeTab() {
   const [subject, setSubject] = useState('')
   const [selectedConversation, setSelectedConversation] = useState<string | null>(null)
-  const [modules, setModules] = useState<any[]>([])
+  const [modules] = useState<Array<{ type: string; title: string; rationale: string }>>([])
   const [saving, setSaving] = useState(false)
 
   const handleSaveDraft = async () => {

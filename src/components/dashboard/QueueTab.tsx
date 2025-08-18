@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Clock, User, MessageSquare } from 'lucide-react'
+import { Clock, MessageSquare } from 'lucide-react'
 import { QueueItem } from '@/lib/types'
 import { useState } from 'react'
 
